@@ -1,0 +1,15 @@
+DESCRIPTION="GIO/GVfs remote filesystem connection manager"
+HOMEPAGE="http://www.uvena.de/gigolo/"
+SRC_URI="http://files.uvena.de/gigolo/${P}.tar.bz2"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	./waf configure --prefix=/usr --docdir=/usr/share/doc/${P} || error "waf configure failed"
+	./waf build $(echo ${MAKEOPTS} | sed -e 's| |\n|g' | grep '^-j[0-9]*$') || error "waf build failed"
+}
+
+src_install() {
+	cd ${B}
+	./waf install --destdir=${D} || error "waf install failed"
+}
