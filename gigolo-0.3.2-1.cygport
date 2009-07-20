@@ -1,0 +1,7 @@
+inherit waf
+
+DESCRIPTION="GIO/GVfs remote filesystem connection manager"
+HOMEPAGE="http://www.uvena.de/gigolo/"
+SRC_URI="http://files.uvena.de/gigolo/${P}.tar.bz2"
+
+WAF_CONFIGURE_FLAGS="--docdir=/usr/share/doc/${PN}"
