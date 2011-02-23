@@ -1,0 +1,6 @@
+category: Gnome Xfce
+requires: gvfs libglib2.0_0 libgtk2.0_0 libintl8 libX11_6
+sdesc: "GVfs mount manager"
+ldesc: "Gigolo is a frontend to easily manage connections to local and 
+remote filesystems using GIO/GVfs. It allows you to quickly 
+connect/mount a remote filesystem and manage bookmarks of such."
