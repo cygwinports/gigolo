@@ -1,0 +1,14 @@
+inherit gnome2
+
+NAME="gigolo"
+VERSION=0.4.1
+RELEASE=1
+CATEGORY="GNOME Xfce"
+SUMMARY="GVfs mount manager"
+DESCRIPTION="Gigolo is a frontend to easily manage connections to local and
+remote filesystems using GIO/GVfs. It allows you to quickly connect/mount a
+remote filesystem and manage bookmarks of such."
+HOMEPAGE="http://www.uvena.de/gigolo/"
+SRC_URI="http://files.uvena.de/gigolo/${NAME}-${VERSION}.tar.bz2"
+
+REQUIRES="gvfs"

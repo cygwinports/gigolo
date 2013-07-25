@@ -1,5 +1,0 @@
-inherit gnome2
-
-DESCRIPTION="GIO/GVfs remote filesystem connection manager"
-HOMEPAGE="http://www.uvena.de/gigolo/"
-SRC_URI="http://files.uvena.de/gigolo/${P}.tar.bz2"
